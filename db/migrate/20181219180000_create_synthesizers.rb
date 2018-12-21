@@ -2,8 +2,8 @@ class CreateSynthesizers < ActiveRecord::Migration[5.2]
   def change
     create_table :synthesizers do |t|
       t.string :name
-      t.string :creator
-      t.string :oscillator
+      t.integer :user_id
+      t.string :waveform
       t.float :gain
       t.float :duration
       t.float :attackTime
