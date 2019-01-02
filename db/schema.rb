@@ -20,18 +20,10 @@ ActiveRecord::Schema.define(version: 2018_12_19_184020) do
     t.integer "user_id"
     t.string "waveform"
     t.float "gain"
-    t.float "duration"
     t.float "attackTime"
     t.float "decayTime"
-    t.float "sustainTime"
     t.float "sustainLevel"
     t.float "releaseTime"
-    t.float "gateTime"
-    t.float "peakLevel"
-    t.float "epsilon"
-    t.string "attackCurve"
-    t.string "decayCurve"
-    t.string "releaseCurve"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

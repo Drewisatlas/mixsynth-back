@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  resources :users, :synthesizers
+  resources :users, only: [:index, :show, :create]
+  resources :synthesizers, :user_synthesizers
 end
