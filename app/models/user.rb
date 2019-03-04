@@ -8,14 +8,4 @@ class User < ApplicationRecord
   validates :username, uniqueness: {
     case_sensitive: false
   }
-
-  attr_accessor :password
-
-  def authenticate (plaintext_password)
-    if Bcrypt::Password.new(self.password) == plaintext_password
-      self
-    else
-      false
-    end
-  end 
 end
